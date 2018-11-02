@@ -20,7 +20,9 @@ set c0;
 // Type of coordinate system:
 // - global : coordinate system same for every cell. Usually aligned with
 //   x,y,z axis. Specify in globalCoeffs section below.
-// - patchLocal : coordinate system different for every cell. Specify in
+// - patchLocal : coordinate system same for every cell. 
+//   This coordinate system is based on the normal vector of the 
+//   zero'th face of a chosen patch specified by the
 //   patchLocalCoeffs section below.
 // - fieldBased : uses the list of field names from the directions list for
 //   selecting the directions to cut. Meant to be used with geometricCut, but
